@@ -7,12 +7,12 @@
 - Find Pythonic way to extract genre
 - Add UNIQUE constraint to database OR organize code for "if exists = replace"
 - Modularize code more I.E. Make it easier to follow and readable
-- Place starting log in/create account in a function to re-reference
+- ~~Place starting log in/create account in a function to re-reference~~
 - Add the ability to create an account if you fail to log in
 - Implement regex for email and password
 - Figure put a good way to implement synopsis (AI integration)
 - ~~Run select statement with an order by clause~~
 - Implement searching through user list
-- Return to the intro when deleting account
+- ~~Return to the intro when deleting account~~
 - Implement web interface
 - Add a way to clear search

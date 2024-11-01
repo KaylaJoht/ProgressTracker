@@ -23,24 +23,42 @@ class Base(DeclarativeBase): pass
 Base.metadata.reflect(bind=engine)
 
 with Session(engine) as session:
+    
+    def start():
+        print("Hello! Welcome to your progress tracker! Sign up or log in!")
+        print("1 - Log in\n2 - Sign up")
+        while (True):
+            try:
+                choice = int(input())
+                if (choice < 1) or (choice > 2): raise NumberNotListed("invalid input")
+                
+                if choice == 1: user_id = login()
+                if choice == 2: user_id = create_account()
+                menu(user_id)
+                break
+            except NumberNotListed:
+                print("Please enter a value between 1 and 2")
+            except Exception as e:
+                print(f"Please enter a number\nOr remedy this error, {e}")
+        return user_id
 
     def login():
         #Function for handling logging in
-        while(True):
-            username = input("Please enter your username: ").lower()
-            password = input("Please enter your password: ") 
-            try:
-                stmt = text(f"SELECT users_id FROM users WHERE email = '{username}' AND password = '{password}'")
-                
-                ans = session.execute(stmt)
-                results = ans.fetchone()
-                if(not results): raise UserNotFoundError("Account not found")
-                user_id = results[0]
-                return user_id
-                
-            except UserNotFoundError:
-                print("Your username or password is not correct")
-
+        username = input("Please enter your username: ").lower()
+        password = input("Please enter your password: ") 
+        try:
+            stmt = text(f"SELECT users_id FROM users WHERE email = '{username}' AND password = '{password}'")
+            
+            ans = session.execute(stmt)
+            results = ans.fetchone()
+            if(not results): raise UserNotFoundError("Account not found")
+            user_id = results[0]
+            return user_id
+            
+        except UserNotFoundError:
+            print("Your username or password is not correct")
+            user_id = start()
+                     
     def create_account():
         #Function for creating an account
         while(True):
@@ -98,8 +116,7 @@ with Session(engine) as session:
                 session.execute(text(f"DELETE FROM users WHERE users_id = {user_id}"))
                 print("Deleted data!")
                 session.commit()
-                user_id = login()
-                menu(user_id)
+                user_id = start()
                 break
             
             if(choice == 4):
@@ -135,8 +152,7 @@ with Session(engine) as session:
                 break
             if(choice == 3):
                 user_id = 0
-                user_id = login()
-                menu(user_id)
+                user_id = start()
                 break
             if(choice == 4):
                 user_info(user_id)
@@ -144,7 +160,6 @@ with Session(engine) as session:
             if(choice == 5):
                 return
                 break
-    
     
     def anime_list():
         #Function for displaying the anime ist
@@ -270,9 +285,6 @@ with Session(engine) as session:
             if(choice == 5):
                 menu(user_id)
                 break
-                
-        
-        
         
     def users_list(user_id):
         #Displaying your personal list
@@ -384,24 +396,8 @@ with Session(engine) as session:
         
         
     #Logging in/Creating a new account
-    print("Hello! Welcome to your progress tracker! Sign up or log in!")
-    print("1 - Log in\n2 - Sign up")
-    while (True):
-        try:
-            choice = int(input())
-            if (choice < 1) or (choice > 2): raise NumberNotListed("invalid input")
-            
-            if choice == 1: user_id = login()
-            if choice == 2: user_id = create_account()
-            break
-        except NumberNotListed:
-            print("Please enter a value between 1 and 2")
-        except Exception as e:
-            print(f"Please enter a number\nOr remedy this error, {e}")
-        
-    
-    print("Now that you're all logged in, please choose what you wish to do")
-    menu(user_id)
+    user_id = start()
+      
 
 session.close()
 print("Thank you for using the progress tracker!")

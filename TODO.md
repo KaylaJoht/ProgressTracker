@@ -11,7 +11,7 @@
 - Add the ability to create an account if you fail to log in
 - Implement regex for email and password
 - Figure put a good way to implement synopsis (AI integration)
--~~ Run select statement with an order by clause ~~
+- ~~Run select statement with an order by clause~~
 - Implement searching through user list
 - Return to the intro when deleting account
 - Implement web interface

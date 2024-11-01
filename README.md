@@ -117,7 +117,7 @@ Please choose a filtering option
 8 - title
 ```
 
-Because we added "Wonder Egg Priority", let's filter by shows that are not in our watch list. Press 7.
+Because we added "Witch Hunter Robin", let's filter by shows that are not in our watch list. Press 7.
 
 ```
 (1, 'Cowboy Bebop', 'Cowboy Bebop', "Crime is timeless. By the year 2071, humanity has expanded across the galaxy, filling the surface of other planets with settlements like those on Ear ... (710 characters truncated) ... Spike's past. As a rival's maniacal plot continues to unravel, Spike must choose between life with his newfound family or revenge for his old wounds.", 'Sci-Fi', 'TV', 26, 'Sunrise', 'Original', 'R', 'Spring', 1998)

@@ -74,16 +74,17 @@ You chose to view all anime.
 3 - See previous 10 anime
 4 - Filter list
 5 - Return to menu
-(5069, 'Soukou Kihei Votoms: Pailsen Files Movie', 'Soukou Kihei Votoms: Pailsen Files Movie', 'Alternative release of Armored Trooper Votoms: Pailsen Files OVA. Was aired 2 years later. Created by the original staff of the series, with an all new story about the end of the 100 year war.', 'Sci-Fi', 'Movie', 1, 'The Answer Studio', 'Original', 'R', 'Winter', 2009)
-(94, 'Jinki:Extend', 'Jinki: Extend', 'Aoba is a young girl who loves to build models of robots. She lived alone with her grandmother until her grandmother passes away. Shortly after she i ... (143 characters truncated) ...  but the true meaning behind the fights is hidden. Aoba works hard at the base so one day she can pilot one of the robots and discover these secrets.', 'Sci-Fi', 'TV', 12, 'feel.', 'Manga', 'R', 'Winter', 2005)
-(6422, 'Jinki:Extend - Sorekara', 'Jinki: Extend', 'Aoba is a young girl who loves to build models of robots. She lived alone with her grandmother until her grandmother passes away. Shortly after she i ... (143 characters truncated) ...  but the true meaning behind the fights is hidden. Aoba works hard at the base so one day she can pilot one of the robots and discover these secrets.', 'Sci-Fi', 'OVA', 1, 'feel.', 'Manga', 'R', 'Winter', 2006)
-(4245, 'Tribe Nine', 'Tribe Nine', 'Fed up with society, youngsters all around Neo-Tokyo formed tribes to find their place in the world. However, group loyalty among them grew fierce an ... (877 characters truncated) ... new threat led by the mysterious Oujirou Otori, the Minato Tribe might just need the power of their two new rookies to overcome the clutches of evil.', 'Sci-Fi', 'TV', 12, 'LIDENFILMS', 'Mixed media', 'R', 'Winter', 2022)
-(6523, 'Kidou Senshi Gundam SEED Destiny Final Plus: Erabareta Mirai', 'Mobile Suit Gundam SEED Destiny Final Plus: The Chosen Future', "In year 74 of the Cosmic Era, the civil war raging between the earthbound Naturals and space-dwelling Coordinators comes to a close. Suffering a majo ... (532 characters truncated) ... t brawls are waged for the fate of the galaxy, a sprawling war between humans who are incapable of understanding one another draws to its conclusion.", 'Drama', 'OVA', 1, 'Sunrise', 'Original', 'R', 'Winter', 2005)
-(1240, 'Shigofumi', 'Shigofumi: Letters from the Departed', 'There are some things that people are unable to say while they are alive; for these, there are "shigofumi," letters carried from the world of the dea ... (497 characters truncated) ... heir deepest secrets revealed. What is unclear, however, are the details of Fumika\'s past. Who was she before she came to be a carrier of shigofumi?', 'Drama', 'TV', 12, 'J.C.Staff', 'Original', 'R', 'Winter', 2008)
-(7629, 'Maji', 'Maji', 'Maji is a young hood in the Nagisa criminal organization whose name is synonymous with loyalty and truth. While driving away thugs, he meets and fall ... (88 characters truncated) ...  run into the rival Kikuchi gang looking for trouble. Based on the first four volumes of the gang chivalry manga by Ayumi Tachihara.\n\n(Source: ANN)', 'Drama', 'OVA', 3, 'Nippon Animation', 'Original', 'R', 'Winter', 1990)
-(2719, 'Death Parade', 'Death Parade', "After death, either Heaven or Hell awaits most humans. But for a select few, death brings them to Quindecim—a bar where only pairs of people who die  ... (448 characters truncated) ...  wager their souls. Though his methods remain unchanged, the sudden appearance of a black-haired amnesiac causes Decim to reevaluate his own rulings.", 'Drama', 'TV', 12, 'Madhouse', 'Original', 'R', 'Winter', 2015)
-(2670, 'Yuri Kuma Arashi', 'Yurikuma Arashi', 'In the past, humanoid bears coexisted with humans. However, a meteor shower that fell onto Earth had a strange effect on bears throughout the world:  ... (865 characters truncated) ... l school, the girls must stand on trial with their love, embarking on a journey of self-discovery en route to attaining true love\'s "promised kiss."', 'Drama', 'TV', 12, 'SILVER LINK.', 'Original', 'R', 'Winter', 2015)
-(4021, 'Wonder Egg Priority', 'Wonder Egg Priority', "Following the suicide of her best and only friend, Koito Nagase, Ai Ooto is left grappling with her new reality. With nothing left to live for, she f ... (601 characters truncated) ... arre world of Wonder Egg Priority, a young girl discovers the different inner struggles tormenting humankind and rescues them from their worst fears.", 'Drama', 'TV', 12, 'CloverWorks', 'Original', 'R', 'Winter', 2021)
+anime_id	title	english	title	synopsis	genre	media	episodes	studio	origin	rating	season	releaseyear
+(1, 'Cowboy Bebop', 'Cowboy Bebop', "Crime is timeless. By the year 2071, humanity has expanded across the galaxy, filling the surface of other planets with settlements like those on Ear ... (710 characters truncated) ... Spike's past. As a rival's maniacal plot continues to unravel, Spike must choose between life with his newfound family or revenge for his old wounds.", 'Sci-Fi', 'TV', 26, 'Sunrise', 'Original', 'R', 'Spring', 1998)
+(2, 'Trigun', 'Trigun', 'Vash the Stampede is the man with a $$60,000,000,000 bounty on his head. The reason: he\'s a merciless villain who lays waste to all those that oppos ... (712 characters truncated) ... summoned to bring about suffering to the trio. Vash\'s agonizing past will be unraveled and his morality and principles pushed to the breaking point.', 'Action', 'TV', 26, 'Madhouse', 'Manga', 'PG-13', 'Spring', 1998)
+(3, 'Witch Hunter Robin', 'Witch Hunter Robin', "Robin Sena is a powerful craft user drafted into the STNJ—a group of specialized hunters that fight deadly beings known as Witches. Though her fire p ... (92 characters truncated) ...  partner, Amon. But the truth about the Witches and herself will leave Robin on an entirely new path that she never expected!\n\n(Source: Funimation)", 'Action', 'TV', 26, 'Sunrise', 'Original', 'PG-13', 'Summer', 2002)
+(4, 'Bouken Ou Beet', 'Beet the Vandel Buster', "It is the dark century and the people are suffering under the rule of the devil, Vandel, who is able to manipulate monsters. The Vandel Busters are a ... (423 characters truncated) ... have passed since then and the young Vandel Buster, Beet, begins his adventure to carry out the Zenon Squad's will to put an end to the dark century.", 'Adventure', 'TV', 52, 'Toei Animation', 'Manga', 'PG', 'Fall', 2004)
+(5, 'Eyeshield 21', 'Eyeshield 21', 'Shy, reserved, and small-statured, Deimon High School student Sena Kobayakawa is the perfect target for bullies. However, as a result of running erra ... (737 characters truncated) ... apon of the Deimon Devil Bats. As he interacts with his teammates, Sena gradually gains more self-confidence and forges valuable bonds along the way.', 'Sports', 'TV', 145, 'Gallop', 'Manga', 'PG-13', 'Spring', 2005)
+(6, 'Hachimitsu to Clover', 'Honey and Clover', "Yuuta Takemoto, a sophomore at an arts college, shares a cheap apartment with two seniors—the eccentric Shinobu Morita, who keeps failing to graduate ... (553 characters truncated) ...  heartwarming tale of youth, love, soul-searching, and self-discovery, intricately woven through the complex relationships between five dear friends.", 'Comedy', 'TV', 24, 'J.C.Staff', 'Manga', 'PG-13', 'Spring', 2005)
+(7, 'Hungry Heart: Wild Striker', 'Hungry Heart: Wild Striker', "As the younger brother of Japanese soccer star Seisuke Kanou, Kyousuke was always expected to grow as a soccer player at the same pace his brother di ... (504 characters truncated) ... remain steadfast in his decision to abandon the sport he once loved, or allow himself to reignite that flame to become the best striker in the world.", 'Comedy', 'TV', 52, 'Nippon Animation', 'Manga', 'PG-13', 'Fall', 2002)
+(8, 'Initial D Fourth Stage', 'Initial D Fourth Stage', 'Takumi Fujiwara finally joins Ryousuke and Keisuke Takahashi to create "Project D." Their goal is twofold: Ryousuke wants to develop his "High-Speed  ... (465 characters truncated) ... tial D details the hardships and successes of the members of Project D as they try to become the best street racing team outside of Gunma Prefecture.', 'Action', 'TV', 24, 'A.C.G.T.', 'Manga', 'PG-13', 'Spring', 2004)
+(9, 'Monster', 'Monster', "Dr. Kenzou Tenma, an elite neurosurgeon recently engaged to his hospital director's daughter, is well on his way to ascending the hospital hierarchy. ... (1069 characters truncated) ... comes face to face with the monster he operated on. He must now embark on a quest of pursuit to make amends for the havoc spread by the one he saved.", 'Drama', 'TV', 74, 'Madhouse', 'Manga', 'R+', 'Spring', 2004)
+(10, 'Naruto', 'Naruto', "Moments prior to Naruto Uzumaki's birth, a huge demon known as the Kyuubi, the Nine-Tailed Fox, attacked Konohagakure, the Hidden Leaf Village, and w ... (351 characters truncated) ... n the village, while his burning desire to become the Hokage of Konohagakure leads him not only to some great new friends, but also some deadly foes.", 'Action', 'TV', 220, 'Pierrot', 'Manga', 'PG-13', 'Fall', 2002)
 Choose here: 
 
 ```
@@ -98,7 +99,7 @@ Let's preview adding
 
 `Please enter the id of the anime you wish to add: `
 
-You can choose any value, and it will add it to your personal list. For fun, let's add "Wonder Egg Priority", type in 4021.
+You can choose any value, and it will add it to your personal list. For fun, let's add "Witch Hunter Robin", type in 3.
 
 `Successfully added the anime!`
 
@@ -118,13 +119,26 @@ Please choose a filtering option
 
 Because we added "Wonder Egg Priority", let's filter by shows that are not in our watch list. Press 7.
 
-Notice how "Wonder Egg Priority" is now removed from the list? That's the power of filtering!
+```
+(1, 'Cowboy Bebop', 'Cowboy Bebop', "Crime is timeless. By the year 2071, humanity has expanded across the galaxy, filling the surface of other planets with settlements like those on Ear ... (710 characters truncated) ... Spike's past. As a rival's maniacal plot continues to unravel, Spike must choose between life with his newfound family or revenge for his old wounds.", 'Sci-Fi', 'TV', 26, 'Sunrise', 'Original', 'R', 'Spring', 1998)
+(2, 'Trigun', 'Trigun', 'Vash the Stampede is the man with a $$60,000,000,000 bounty on his head. The reason: he\'s a merciless villain who lays waste to all those that oppos ... (712 characters truncated) ... summoned to bring about suffering to the trio. Vash\'s agonizing past will be unraveled and his morality and principles pushed to the breaking point.', 'Action', 'TV', 26, 'Madhouse', 'Manga', 'PG-13', 'Spring', 1998)
+(4, 'Bouken Ou Beet', 'Beet the Vandel Buster', "It is the dark century and the people are suffering under the rule of the devil, Vandel, who is able to manipulate monsters. The Vandel Busters are a ... (423 characters truncated) ... have passed since then and the young Vandel Buster, Beet, begins his adventure to carry out the Zenon Squad's will to put an end to the dark century.", 'Adventure', 'TV', 52, 'Toei Animation', 'Manga', 'PG', 'Fall', 2004)
+(5, 'Eyeshield 21', 'Eyeshield 21', 'Shy, reserved, and small-statured, Deimon High School student Sena Kobayakawa is the perfect target for bullies. However, as a result of running erra ... (737 characters truncated) ... apon of the Deimon Devil Bats. As he interacts with his teammates, Sena gradually gains more self-confidence and forges valuable bonds along the way.', 'Sports', 'TV', 145, 'Gallop', 'Manga', 'PG-13', 'Spring', 2005)
+(6, 'Hachimitsu to Clover', 'Honey and Clover', "Yuuta Takemoto, a sophomore at an arts college, shares a cheap apartment with two seniors—the eccentric Shinobu Morita, who keeps failing to graduate ... (553 characters truncated) ...  heartwarming tale of youth, love, soul-searching, and self-discovery, intricately woven through the complex relationships between five dear friends.", 'Comedy', 'TV', 24, 'J.C.Staff', 'Manga', 'PG-13', 'Spring', 2005)
+(7, 'Hungry Heart: Wild Striker', 'Hungry Heart: Wild Striker', "As the younger brother of Japanese soccer star Seisuke Kanou, Kyousuke was always expected to grow as a soccer player at the same pace his brother di ... (504 characters truncated) ... remain steadfast in his decision to abandon the sport he once loved, or allow himself to reignite that flame to become the best striker in the world.", 'Comedy', 'TV', 52, 'Nippon Animation', 'Manga', 'PG-13', 'Fall', 2002)
+(8, 'Initial D Fourth Stage', 'Initial D Fourth Stage', 'Takumi Fujiwara finally joins Ryousuke and Keisuke Takahashi to create "Project D." Their goal is twofold: Ryousuke wants to develop his "High-Speed  ... (465 characters truncated) ... tial D details the hardships and successes of the members of Project D as they try to become the best street racing team outside of Gunma Prefecture.', 'Action', 'TV', 24, 'A.C.G.T.', 'Manga', 'PG-13', 'Spring', 2004)
+(9, 'Monster', 'Monster', "Dr. Kenzou Tenma, an elite neurosurgeon recently engaged to his hospital director's daughter, is well on his way to ascending the hospital hierarchy. ... (1069 characters truncated) ... comes face to face with the monster he operated on. He must now embark on a quest of pursuit to make amends for the havoc spread by the one he saved.", 'Drama', 'TV', 74, 'Madhouse', 'Manga', 'R+', 'Spring', 2004)
+(10, 'Naruto', 'Naruto', "Moments prior to Naruto Uzumaki's birth, a huge demon known as the Kyuubi, the Nine-Tailed Fox, attacked Konohagakure, the Hidden Leaf Village, and w ... (351 characters truncated) ... n the village, while his burning desire to become the Hokage of Konohagakure leads him not only to some great new friends, but also some deadly foes.", 'Action', 'TV', 220, 'Pierrot', 'Manga', 'PG-13', 'Fall', 2002)
+(11, 'Tennis no Ouji-sama', 'The Prince of Tennis', 'At the request of his father, tennis prodigy Ryouma Echizen has returned from America and is ready to take the Japanese tennis scene by storm. Aiming ... (809 characters truncated) ... tennis in unique ways for their own reasons. Ryouma and his teammates must learn to cooperate if they want to become the champions they aspire to be.', 'Sports', 'TV', 178, 'Trans Arts', 'Manga', 'PG-13', 'Fall', 2001)
+``` 
+
+Notice how "Witch Hunter Robin" is now removed from the list? That's the power of filtering!
 
 You can scroll through the list to search through anime, if you like. Whenever you're ready to explore other features, press 5.
 
 2. Using the progress tracker
 
-After pressing 5, you'll be taken to the menu. Then press 2, and you'll see the progress tracker. If you used one of the preset accounts, you'll see a bunch of anime, if not just a menu and "Wonder Egg Priority"
+After pressing 5, you'll be taken to the menu. Then press 2, and you'll see the progress tracker. If you used one of the preset accounts, you'll see a bunch of anime, if not just a menu and "Witch Hunter Robin"
 
 ```
 Here is your personal list
@@ -136,7 +150,7 @@ Please choose an option
 4 - Return to menu
 
 anime_id	list_id	title	english title	episodes	watch status	progress in (%)
-(4021, 1, 'Wonder Egg Priority', 'Wonder Egg Priority', 12, 'Plan to Watch', 0)
+(3, 1, 'Witch Hunter Robin', 'Witch Hunter Robin', 26, 'Plan to Watch', 0)
 ```
 
 The program prints out the first 10 shows, mostly because it's better to filter through the list.
@@ -147,7 +161,7 @@ Any show you add automatically gets updated with the status as "Plan to watch" a
 (3) Filter by watch status
 (4) Return to the main menu
 
-Let's pretend that we have watched 7 episodes of Wonder Egg Priority, let's update the status
+Let's pretend that we have watched 7 episodes of Witch Hunter Robin, let's update the status
 First, add the list_id. 
 
 ```
@@ -161,13 +175,15 @@ Since we have only watched 7 episodes, we choose in-progress
 
 Now we are back to the menu, and we can see that it's values have updates
 ```
-(4021, 1, 'Wonder Egg Priority', 'Wonder Egg Priority', 12, 'In-Progress', 0)
+(3, 1, 'Witch Hunter Robin', 'Witch Hunter Robin', 26, 'In-Progress', 0)
 ```
 
 Let's update our progress to reflect that we watched 7 episodes
-`(4021, 40, 'Wonder Egg Priority', 'Wonder Egg Priority', 12, 'In-Progress', 58)`
+```
+(3, 1, 'Witch Hunter Robin', 'Witch Hunter Robin', 26, 'In-Progress', 26)
+```
 
-Look at that, we now have 58% completion.
+Look at that, we now have 26% completion.
 It would be fun to use the filtering option. If you are using one of the three accounts, then have fun filtering through the 4 statuses.
 If not, let's go to the main menu to switch into a different account. 
 

@@ -63,9 +63,7 @@ with Session(engine) as session:
                 return user_id
             except EmailError:
                 print("You already registered with this Email")
-                
-        
-        
+                      
     def user_info(user_id):
         #Function for letting the user update their information
         while (True):
@@ -111,7 +109,6 @@ with Session(engine) as session:
             
     def get_list(user_id):
         #Function for updating personal list_id
-        user_id = 4
         list_stmt = text(f"SELECT max(list_id) from user_list WHERE users_id = {user_id}")
         ans = session.execute(list_stmt)
         list_length = ans.fetchall()
@@ -154,7 +151,9 @@ with Session(engine) as session:
         print("You chose to view all anime.")  
             
         stmt = text(f"SELECT anime.anime_id, title, english_title, synopsis, genre, media, episodes, studio, origin, rating, season, release_year FROM anime_list as al INNER JOIN anime ON al.anime_id = anime.anime_id INNER JOIN genre ON al.genre_id = genre.genre_id INNER JOIN studio ON al.studio_id = studio.studio_id INNER JOIN origin ON al.origin_id = origin.origin_id INNER JOIN rating ON al.rating_id = rating.rating_id INNER JOIN season ON al.season_id = season.season_id INNER JOIN media ON al.media_id = media.media_id INNER JOIN release_year ON al.release_year_id = release_year.release_year_id")
-        ans = session.execute(stmt)
+        order_by = text("ORDER BY anime.anime_id asc")
+        fullstmt = text(str(stmt) + " " + str(order_by))
+        ans = session.execute(fullstmt)
         results = ans.fetchall()
         id_list = len(results)
         i = 0
@@ -241,7 +240,7 @@ with Session(engine) as session:
                                 filt_more = int(input("Please choose a filter option by typing the id: "))
                                 if (filt_more < 1) or (filt_more > len(res)): raise NumberNotListed("Number out of range")
                                 stmt_two = text(f"WHERE {options[filt]}.{options[filt]}_id = {filt_more}")
-                                search_stmt = text(str(stmt) + " " + str(stmt_two))
+                                search_stmt = text(str(stmt) + " " + str(stmt_two) + " " + str(order_by))
                                 ans = session.execute(search_stmt)
                                 results = ans.fetchall()
                                 break
@@ -255,7 +254,7 @@ with Session(engine) as session:
                         if(filt == 7): 
                             print("Now displaying all shows that are not in your watch list")
                             stmt_two = text(f"WHERE anime.anime_id NOT in (SELECT anime_id from user_list where users_id = {user_id})")
-                            search_stmt = text(str(stmt) + " " + str(stmt_two))
+                            search_stmt = text(str(stmt) + " " + str(stmt_two) + " " + str(order_by))
                             ans = session.execute(search_stmt)
                             results = ans.fetchall()
                             break
@@ -263,7 +262,7 @@ with Session(engine) as session:
                         if(filt == 8):
                             filt_more = input("Please input the phrase you're looking for (Note, we search both titles): ")
                             stmt_two = text(f"WHERE english_title LIKE '%{filt_more}%' OR title LIKE '%{filt_more}%'")
-                            search_stmt = text(str(stmt) + " " + str(stmt_two))
+                            search_stmt = text(str(stmt) + " " + str(stmt_two) + " " + str(order_by))
                             ans = session.execute(search_stmt)
                             results = ans.fetchall()
                             break

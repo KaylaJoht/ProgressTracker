@@ -24,6 +24,8 @@ Base.metadata.reflect(bind=engine)
 
 with Session(engine) as session:
     
+    user_id = 0
+    
     def start():
         print("Hello! Welcome to your progress tracker! Sign up or log in!")
         print("1 - Log in\n2 - Sign up")
@@ -231,15 +233,15 @@ with Session(engine) as session:
                 while(True):
                     try:
                         print("Please choose a filtering option")
-                        print("\n1 - Genres\n2 - Studios\n3 - Rating\n4 - Season\n5 - Year\n6 - Origin\n7 - Watched\n8 - Title\n")
+                        print("\n1 - Genres\n2 - Studios\n3 - Rating\n4 - Season\n5 - Year\n6 - Origin\n7 - Watched\n8 - Title\n9 - Clear Filters")
                         filt = int(input())
-                        if (filt < 1) or (filt > 8): raise NumberNotListed("Number out of range")
+                        if (filt < 1) or (filt > 9): raise NumberNotListed("Number out of range")
                     except NumberNotListed:
-                        print("Please enter a value between 1 and 4")
+                        print("Please enter a value between 1 and 9")
                     except Exception as e:
                         print(f"Please enter a number\nOr remedy this error, {e}")
                         
-                    options = {1:"genre", 2:"studio", 3:"rating",4:"season",5:"release_year",6:"origin", 7:"watched", 8:"title"}
+                    options = {1:"genre", 2:"studio", 3:"rating",4:"season",5:"release_year",6:"origin", 7:"watched", 8:"title", 9:"clear"}
         
                     print(f"You chose {options[filt]}")
                     #These options are rather simple, so they are grouped together.
@@ -279,6 +281,12 @@ with Session(engine) as session:
                             stmt_two = text(f"WHERE english_title LIKE '%{filt_more}%' OR title LIKE '%{filt_more}%'")
                             search_stmt = text(str(stmt) + " " + str(stmt_two) + " " + str(order_by))
                             ans = session.execute(search_stmt)
+                            results = ans.fetchall()
+                            break
+                        #Clear List
+                        if(filt == 9):
+                            print("Cleared Searches")
+                            ans = session.execute(fullstmt)
                             results = ans.fetchall()
                             break
             #Quit    
@@ -393,11 +401,9 @@ with Session(engine) as session:
             if(choice == 4):
                 menu(user_id)
                 break
-        
-        
-    #Logging in/Creating a new account
-    user_id = start()
-      
+    
+    start()
+
 
 session.close()
 print("Thank you for using the progress tracker!")
